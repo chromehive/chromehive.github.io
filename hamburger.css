@@ -1,0 +1,51 @@
+.navbar-toggler{
+	outline: none !important;
+	border: none !important;
+	background: transparent;
+	display: inline-block;
+	margin: 2px 10px 0 0;
+	position: relative;
+	margin-top: 0.5%;
+	cursor: pointer;
+}
+
+.circle{
+	width: 20px;
+	height: 20px;
+	position: relative;
+}
+
+.icon{
+	margin-top: 2%;
+}
+
+.line{
+	position: absolute;
+	height: 3.5px;
+	width: 20px;
+	background: #fff;
+	border-radius: 8px;
+	transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.35s;
+}
+
+.top{
+	top: 7%;
+}
+
+.middle{
+	top: 37%;
+}
+
+.bottom{
+	top: 67%;
+}
+		
+.icon.close .top{
+	transform: rotate(45deg);
+	top: 37%;
+}
+
+.icon.close .middle, .icon.close .bottom{
+	transform: rotate(-45deg);
+	top: 37%;
+}
